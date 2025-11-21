@@ -1,215 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="index.css" />
   <title>Bootstrap</title>
 </head>
 
 <body>
-  <header>
-    <div class="flex justify-between">
-      <a href="#" class="logo"> Start Bootstrap </a>
+  <header class="pt-4 pb-12 ps-12 pe-12 bg-neutral-800 md:ps-24 md:pe-24">
+    <div class="flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-neutral-50">
+        Start Bootstrap
+      </a>
 
-      <button class="menu-btn">
+      <button class="border-2 border-neutral-400 p-2 rounded-md lg:hidden" id="hamburger-menu">
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
           <path
             d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
         </svg>
       </button>
+      <nav class="hidden lg:block">
+        <ul class="lg:flex lg:flex-row lg:gap-4 lg:items-center lg:justify-between">
+          <li><a href="#" class="text-neutral-400">Home</a></li>
+          <li><a href="#" class="text-neutral-400">About</a></li>
+          <li><a href="#" class="text-neutral-400">Contact</a></li>
+          <li><a href="#" class="text-neutral-400">Pricing</a></li>
+          <li><a href="#" class="text-neutral-400">FAQ</a></li>
+          <li>
+            <a href="#" class="text-neutral-400 flex items-center">
+              Blog
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+              </svg>
+            </a>
+          </li>
+          <li><a href="#" class="text-neutral-400">Portfolio</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="nav">
-      <ul class="nav-list">
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">About</a></li>
-        <li><a href="#" class="nav-link">Contact</a></li>
-        <li><a href="#" class="nav-link">Pricing</a></li>
-        <li><a href="#" class="nav-link">FAQ</a></li>
-        <li>
-          <a href="#" class="nav-link flex items-center">
-            Blog
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-              <path
-                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
-            </svg>
-          </a>
-        </li>
-        <li><a href="#" class="nav-link">Portfolio</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
-    <section aria-labelledby="hero-title" class="hero">
-      <div class="hero-header">
-        <h1 id="hero-title" class="hero-title section-title">
-          A Bootstrap 5 template for modern businesses
-        </h1>
-        <p class="hero-text">
-          Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!
-        </p>
-      </div>
-
-      <div class="hero-actions">
-        <a class="btn-start" href="#features">Get Started</a>
-        <a href="#" class="btn-learn">Learn More</a>
-      </div>
-
-      <img class="hero-img" src="https://dummyimage.com/600x400/343a40/6c757d"
-        alt="Abstract graphic representing a modern business website." />
-    </section>
-
-    <section class="features" aria-labelledby="features-title">
-      <h2 id="features-title" class="section-title">
-        A better way to start building.
-      </h2>
-
-      <div class="features-grid">
-        <article class="feature-card">
-          <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m200-120-80-480h720l-80 480H200Zm67-80h426l51-320H216l51 320Zm133-160h160q17 0 28.5-11.5T600-400q0-17-11.5-28.5T560-440H400q-17 0-28.5 11.5T360-400q0 17 11.5 28.5T400-360ZM240-640q-17 0-28.5-11.5T200-680q0-17 11.5-28.5T240-720h480q17 0 28.5 11.5T760-680q0 17-11.5 28.5T720-640H240Zm80-120q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760H320Zm-53 560h426-426Z"/></svg>
-          </div>
-          <h3 class="feature-title">Featured Title</h3>
-          <p class="feature-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <section aria-labelledby="hero-title" class="ps-12 pe-12 pb-12 bg-neutral-800 md:ps-24 md:pe-24 lg:">
+      <div class="lg:flex lg:items-center">
+        <div class="ps-4 pe-4">
+          <h1 id="hero-title" class="text-2xl font-bold text-neutral-50 text-center md:text-3xl">
+            A Bootstrap 5 template for modern businesses
+          </h1>
+          <p class="pt-4 pb-4 text-xl text-neutral-400 text-center">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit!
           </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-120v-720h400v160h400v560H80Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h320v-400H480v80h80v80h-80v80h80v80h-80v80Zm160-240v-80h80v80h-80Zm0 160v-80h80v80h-80Z"/></svg>
+          <div class="pt-4 flex flex-col items-center gap-4 sm:flex-row justify-center">
+            <a class="w-full pt-2 pb-2 ps-4 pe-4 bg-blue-600 text-neutral-50 text-center font-semibold rounded-lg sm:w-fit"
+              href="#features">Get Started</a>
+            <a href="#"
+              class="w-full pt-2 pb-2 ps-4 pe-4 text-center font-semibold rounded-lg border-2 border-neutral-50 hover:bg-neutral-50 hover:text-black text-neutral-50 transition sm:w-fit">Learn
+              More</a>
           </div>
-          <h3 class="feature-title">Featured Title</h3>
-          <p class="feature-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </article>
+        </div>
 
-        <article class="feature-card">
-          <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
-          </div>
-          <h3 class="feature-title">Featured Title</h3>
-          <p class="feature-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <div class="feature-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
-          </div>
-          <h3 class="feature-title">Featured Title</h3>
-          <p class="feature-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-        </article>
+        <img class="hidden lg:block" src="https://dummyimage.com/600x400/343a40/6c757d"
+          alt="Abstract graphic representing a modern business website." />
       </div>
     </section>
 
-    <div class="review-section">
-      <article class="review">
-        <p class="review-text">
-          "Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"
+    <section class="ps-12 pe-12 pt-12 pb-12 flex flex-col gap-4 md:ps-24 md:pe-24" id="features"
+      aria-labelledby="features-title">
+      <div class="lg:flex lg:gap-20">
+        <h2 id="features-title" class="text-2xl text-black font-semibold md:text-3xl">
+          A better way to start building.
+        </h2>
+
+        <div class="md:grid grid-cols-2 gap-4">
+          <article class="pt-8 pb-8 flex flex-col lg:p-0">
+            <div class="w-fit p-4 rounded-lg bg-blue-600">
+              <svg class="fill-neutral-50" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#e3e3e3">
+                <path
+                  d="m200-120-80-480h720l-80 480H200Zm67-80h426l51-320H216l51 320Zm133-160h160q17 0 28.5-11.5T600-400q0-17-11.5-28.5T560-440H400q-17 0-28.5 11.5T360-400q0 17 11.5 28.5T400-360ZM240-640q-17 0-28.5-11.5T200-680q0-17 11.5-28.5T240-720h480q17 0 28.5 11.5T760-680q0 17-11.5 28.5T720-640H240Zm80-120q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760H320Zm-53 560h426-426Z" />
+              </svg>
+            </div>
+            <h3 class="pt-4 pb-2 text-xl font-bold">Featured Title</h3>
+            <p class="feature-text">
+              Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.
+            </p>
+          </article>
+
+          <article class="pt-8 pb-8 flex flex-col lg:p-0">
+            <div class="w-fit p-4 rounded-lg bg-blue-600">
+              <svg class="fill-neutral-50" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#e3e3e3">
+                <path
+                  d="m200-120-80-480h720l-80 480H200Zm67-80h426l51-320H216l51 320Zm133-160h160q17 0 28.5-11.5T600-400q0-17-11.5-28.5T560-440H400q-17 0-28.5 11.5T360-400q0 17 11.5 28.5T400-360ZM240-640q-17 0-28.5-11.5T200-680q0-17 11.5-28.5T240-720h480q17 0 28.5 11.5T760-680q0 17-11.5 28.5T720-640H240Zm80-120q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760H320Zm-53 560h426-426Z" />
+              </svg>
+            </div>
+            <h3 class="pt-4 pb-2 text-xl font-bold">Featured Title</h3>
+            <p class="feature-text">
+              Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.
+            </p>
+          </article>
+
+          <article class="pt-8 pb-8 flex flex-col lg:p-0">
+            <div class="w-fit p-4 rounded-lg bg-blue-600">
+              <svg class="fill-neutral-50" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#e3e3e3">
+                <path
+                  d="m200-120-80-480h720l-80 480H200Zm67-80h426l51-320H216l51 320Zm133-160h160q17 0 28.5-11.5T600-400q0-17-11.5-28.5T560-440H400q-17 0-28.5 11.5T360-400q0 17 11.5 28.5T400-360ZM240-640q-17 0-28.5-11.5T200-680q0-17 11.5-28.5T240-720h480q17 0 28.5 11.5T760-680q0 17-11.5 28.5T720-640H240Zm80-120q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760H320Zm-53 560h426-426Z" />
+              </svg>
+            </div>
+            <h3 class="pt-4 pb-2 text-xl font-bold">Featured Title</h3>
+            <p class="feature-text">
+              Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.
+            </p>
+          </article>
+
+          <article class="pt-8 pb-8 flex flex-col lg:p-0">
+            <div class="w-fit p-4 rounded-lg bg-blue-600">
+              <svg class="fill-neutral-50" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                width="24px" fill="#e3e3e3">
+                <path
+                  d="m200-120-80-480h720l-80 480H200Zm67-80h426l51-320H216l51 320Zm133-160h160q17 0 28.5-11.5T600-400q0-17-11.5-28.5T560-440H400q-17 0-28.5 11.5T360-400q0 17 11.5 28.5T400-360ZM240-640q-17 0-28.5-11.5T200-680q0-17 11.5-28.5T240-720h480q17 0 28.5 11.5T760-680q0 17-11.5 28.5T720-640H240Zm80-120q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760H320Zm-53 560h426-426Z" />
+              </svg>
+            </div>
+            <h3 class="pt-4 pb-2 text-xl font-bold">Featured Title</h3>
+            <p class="feature-text">
+              Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="pt-12 pb-12 ps-12 pe-12 bg-neutral-200 md:ps-24 md:pe-24">
+      <article class="lg:w-2/4 m-auto">
+        <p class="text-xl text-black font-medium italic text-center">
+          "Working with Start Bootstrap templates has saved me tons of
+          development time when building new projects! Starting with a
+          Bootstrap template just makes things easier!"
         </p>
 
-        <div class="author">
-          <div class="author-img">
-            <img src="https://dummyimage.com/40x40/ced4da/6c757d" alt="user profile image" />
-          </div>
-          <p class="author-name">Tom Ato / CEO, Pomodoro</p>
+        <div class="flex gap-4 items-center mt-4 md:justify-center">
+          <img class="rounded-full" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="user profile image" />
+          <p class="font-bold text-black">Tom Ato <span class="text-blue-600">/</span> CEO, Pomodoro</p>
         </div>
       </article>
     </div>
 
-    <section class="blog" aria-labelledby="blog-title">
-      <h2 class="section-title" id="blog-title">From our blog</h2>
-      <p class="blog-desc">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.
+    <section class="pt-12 pb-12 ps-12 pe-12" aria-labelledby="blog-title">
+      <h2 class="text-center font-bold text-2xl" id="blog-title">From our blog</h2>
+      <p class="text-center text-neutral-400 text-xl pt-2 pb-8">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit
+        ratione dicta mollitia. Officiis ad.
       </p>
 
-      <div class="blog-list">
-        <!-- BLOG POST -->
-        <article class="post">
-          <img src="https://dummyimage.com/600x350/ced4da/6c757d" alt="A blog post image." />
-          <div class="post-info">
-            <span class="post-badge">New</span>
-            <h3 class="post-title">Blog Post Title</h3>
-
-            <p class="post-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <div class="flex flex-col gap-8 lg:flex-row lg:w-3/4 lg:m-auto">
+        <article class="shadow-lg rounded-lg">
+          <img class="w-full rounded-t-lg object-cover" src="https://dummyimage.com/600x350/ced4da/6c757d"
+            alt="A blog post image." />
+          <div class="p-4">
+            <span class="pt-1 pb-1 ps-2 pe-2 text-xs text-neutral-50 bg-blue-600 rounded-full">News</span>
+            <h3 class="text-black text-xl font-semibold pt-2">Blog Post Title</h3>
+            <p class="pt-2 pb-2 text-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              iste consequuntur doloribus neque ipsum voluptate incidunt sint
+              vel blanditiis error. Cum repellendus obcaecati sunt quae libero
+              perferendis neque repellat minima!
             </p>
-
-            <div class="author">
-              <div class="author-img">
-                <img src="" alt="user profile image" />
+            <div class="flex items-center gap-4">
+              <img class="rounded-full" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="author profile image" />
+              <div class="flex flex-col">
+                <p class="text-black font-semibold">Josiah Barclay</p>
+                <div class="">
+                  <time class="text-xs text-neutral-400" datetime="2023-03-12">March 12, 2023</time>
+                  <span class="text-xs text-neutral-400">6-min read</span>
+                </div>
               </div>
-              <p class="author-name">Tom Ato</p>
-            </div>
-
-            <div class="post-meta">
-              <time datetime="2023-03-12">March 12, 2023</time>
-              <span class="read-time">6-min read</span>
             </div>
           </div>
         </article>
 
-        <!-- Aynı post 2 -->
-        <article class="post">
-          <img src="https://dummyimage.com/600x350/ced4da/6c757d" alt="A blog post image." />
-          <div class="post-info">
-            <span class="post-badge">New</span>
-            <h3 class="post-title">Blog Post Title</h3>
-            <p class="post-text">Lorem ipsum dolor sit amet.</p>
-            <div class="author">
-              <div class="author-img"><img src="" alt=""></div>
-              <p class="author-name">Tom Ato</p>
-            </div>
-            <div class="post-meta">
-              <time datetime="2023-03-12">March 12, 2023</time>
-              <span class="read-time">6-min read</span>
+        <article class="shadow-lg rounded-lg">
+          <img class="w-full rounded-t-lg object-cover" src="https://dummyimage.com/600x350/ced4da/6c757d"
+            alt="A blog post image." />
+          <div class="p-4">
+            <span class="pt-1 pb-1 ps-2 pe-2 text-xs text-neutral-50 bg-blue-600 rounded-full">News</span>
+            <h3 class="text-black text-xl font-semibold pt-2">Blog Post Title</h3>
+            <p class="pt-2 pb-2 text-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              iste consequuntur doloribus neque ipsum voluptate incidunt sint
+              vel blanditiis error. Cum repellendus obcaecati sunt quae libero
+              perferendis neque repellat minima!
+            </p>
+            <div class="flex items-center gap-4">
+              <img class="rounded-full" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="author profile image" />
+              <div class="flex flex-col">
+                <p class="text-black font-semibold">Josiah Barclay</p>
+                <div class="">
+                  <time class="text-xs text-neutral-400" datetime="2023-03-12">March 12, 2023</time>
+                  <span class="text-xs text-neutral-400">6-min read</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
 
-        <!-- Aynı post 3 -->
-        <article class="post">
-          <img src="https://dummyimage.com/600x350/ced4da/6c757d" alt="A blog post image." />
-          <div class="post-info">
-            <span class="post-badge">New</span>
-            <h3 class="post-title">Blog Post Title</h3>
-            <p class="post-text">Lorem ipsum dolor sit amet.</p>
-            <div class="author">
-              <div class="author-img"><img src="" alt=""></div>
-              <p class="author-name">Tom Ato</p>
-            </div>
-            <div class="post-meta">
-              <time datetime="2023-03-12">March 12, 2023</time>
-              <span class="read-time">6-min read</span>
+        <article class="shadow-lg rounded-lg">
+          <img class="w-full rounded-t-lg object-cover" src="https://dummyimage.com/600x350/ced4da/6c757d"
+            alt="A blog post image." />
+          <div class="p-4">
+            <span class="pt-1 pb-1 ps-2 pe-2 text-xs text-neutral-50 bg-blue-600 rounded-full">News</span>
+            <h3 class="text-black text-xl font-semibold pt-2">Blog Post Title</h3>
+            <p class="pt-2 pb-2 text-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              iste consequuntur doloribus neque ipsum voluptate incidunt sint
+              vel blanditiis error. Cum repellendus obcaecati sunt quae libero
+              perferendis neque repellat minima!
+            </p>
+            <div class="flex items-center gap-4">
+              <img class="rounded-full" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="author profile image" />
+              <div class="flex flex-col">
+                <p class="text-black font-semibold">Josiah Barclay</p>
+                <div class="">
+                  <time class="text-xs text-neutral-400" datetime="2023-03-12">March 12, 2023</time>
+                  <span class="text-xs text-neutral-400">6-min read</span>
+                </div>
+              </div>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="signup">
-      <div class="signup-header">
-        <h2 class="signup-title">New products, delivered to you.</h2>
-        <p class="signup-desc">Sign up for our newsletter for updates.</p>
-      </div>
+    <section class="pt-12 pb-12 ps-12 pe-12">
+      <article class="pt-8 pb-8 ps-4 pe-4 bg-blue-600 rounded-lg lg:w-3/4 lg:m-auto">
+        <header>
+          <h2 class="text-2xl text-neutral-50 font-bold text-center">New products, delivered to you.</h2>
+          <p class="pb-4 text-neutral-400 text-center">Sign up for our newsletter for updates.</p>
+        </header>
 
-      <div class="signup-body">
-        <form action="" class="signup-form">
-          <div class="input-group">
-            <input class="input" type="email" required>
-            <button class="submit">Sign up</button>
-          </div>
-          <p class="form-note">We care about privacy.</p>
-        </form>
-      </div>
+        <footer>
+          <form action="">
+            <div class="relative">
+              <input class="pt-2 pb-2 w-full rounded-lg placeholder:text-neutral-400" type="email" required
+                placeholder="Email adress..." />
+              <button
+                class="h-full ps-2 pe-2 absolute right-0 border-white border-2 rounded-r-lg bg-blue-600 text-neutral-50 hover:bg-white hover:text-black">Sign
+                up</button>
+            </div>
+            <p class="text-neutral-400 text-center p-2">We care about privacy.</p>
+          </form>
+        </footer>
+      </article>
     </section>
   </main>
 </body>
