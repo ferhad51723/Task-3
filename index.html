@@ -2,301 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <link rel="stylesheet" href="../dist/output.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Bootstrap</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="bg-white dark:bg-gray-900">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="flex h-16 items-center justify-between">
-                    <div class="md:flex md:items-center md:gap-12">
-                        <a class="block text-teal-600 dark:text-teal-600" href="#">
-                            <span class="sr-only">Home</span>
-                            Bootstrap
-                        </a>
-                    </div>
+  <header>
+    <a href=""> Start Bootstrap </a>
 
-                    <div class="hidden md:block">
-                        <nav aria-label="Global">
-                            <ul class="flex items-center gap-6 text-sm">
-                                <li>
-                                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#">
-                                        Home
-                                    </a>
-                                </li>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="#"> Home </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#"> About </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#"> Contact </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#"> Pricing </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#"> FAQ </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#">
+            Blog
+            <span>
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+              </svg>
+            </span>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#"> Portfolio </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-                                <li>
-                                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#">
-                                        About
-                                    </a>
-                                </li>
+  <main>
+    <section aria-labelledby="hero__heading" class="hero">
+      <div class="hero__left-column">
+        <h2 id="hero__heading" class="hero__heading">
+          A Bootstrap 5 template for modern businesses
+        </h2>
+        <p class="hero__description">
+          Quickly design and customize responsive mobile-first sites with
+          Bootstrap, the world’s most popular front-end open source toolkit!
+        </p>
+      </div>
 
-                                <li>
-                                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#">
-                                        Contact
-                                    </a>
-                                </li>
+      <div class="hero__actions-buttons">
+        <a class="hero__link hero__link--get-started" href="#features">
+          Get Started
+        </a>
 
-                                <li>
-                                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#">
-                                        Pricing
-                                    </a>
-                                </li>
+        <a href="" class="hero__link hero__link--learn-more"> Learn More </a>
+      </div>
 
-                                <li>
-                                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#">
-                                        FAQ
-                                    </a>
-                                </li>
+      <img class="hero__image" src="https://dummyimage.com/600x400/343a40/6c757d"
+        alt="Abstract graphic representing a modern business website." />
+    </section>
 
-                                <li>
-                                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#">
-                                        Blog
-                                    </a>
-                                </li>
+    <section class="features" aria-labelledby="features__heading">
+      <h2 id="features__heading" class="features__heading section__heading">
+        A better way to start building.
+      </h2>
 
-                                <li>
-                                    <a class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                                        href="#">
-                                        Portfolio
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
+      <div class="features__cards-group">
+        <article class="feature-card">
+          <div class="feature-card__icon"></div>
+          <h3 class="feature-card__title">Featured Title</h3>
+          <p class="feature-card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            ducimus, qui voluptatibus dolore nemo fugit perferendis
+            dignissimos. Nam natus maxime animi eum sit est ratione! Illum
+            eligendi aperiam dolorem similique?
+          </p>
+        </article>
 
-        <section class="bg-white lg:grid lg:h-screen lg:place-content-center">
-            <div
-                class="mx-auto w-screen max-w-7xl px-4 py-16 sm:px-6 sm:py-24 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-32">
-                <div class="max-w-prose text-left">
-                    <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl">
-                        A Bootstrap 5 template for modern businesses
-                    </h1>
+        <article class="feature-card">
+          <div class="feature-card__icon"></div>
+          <h3 class="feature-card__title">Featured Title</h3>
+          <p class="feature-card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            ducimus, qui voluptatibus dolore nemo fugit perferendis
+            dignissimos. Nam natus maxime animi eum sit est ratione! Illum
+            eligendi aperiam dolorem similique?
+          </p>
+        </article>
 
-                    <p class="mt-4 text-base text-pretty text-gray-700 sm:text-lg/relaxed">
-                        Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-                        popular front-end open source toolkit!
-                    </p>
+        <article class="feature-card">
+          <div class="feature-card__icon"></div>
+          <h3 class="feature-card__title">Featured Title</h3>
+          <p class="feature-card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            ducimus, qui voluptatibus dolore nemo fugit perferendis
+            dignissimos. Nam natus maxime animi eum sit est ratione! Illum
+            eligendi aperiam dolorem similique?
+          </p>
+        </article>
 
-                    <div class="mt-4 flex gap-4 sm:mt-6">
-                        <a class="inline-block rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
-                            href="#">
-                            Get Started
-                        </a>
+        <article class="feature-card">
+          <div class="feature-card__icon"></div>
+          <h3 class="feature-card__title">Featured Title</h3>
+          <p class="feature-card__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            ducimus, qui voluptatibus dolore nemo fugit perferendis
+            dignissimos. Nam natus maxime animi eum sit est ratione! Illum
+            eligendi aperiam dolorem similique?
+          </p>
+        </article>
+      </div>
+    </section>
 
-                        <a class="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900"
-                            href="#">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+    <div class="top-review-section">
+      <article class="review">
+        <p class="review__content">
+          "Working with Start Bootstrap templates has saved me tons of
+          development time when building new projects! Starting with a
+          Bootstrap template just makes things easier!"
+        </p>
 
-                <img src="https://dummyimage.com/600x400/343a40/6c757d" alt="">
-            </div>
-        </section>
-
-        <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-            <section class="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div class="col-span-1">
-                    <h2 class="text-3xl/tight font-bold text-gray-900 sm:text-4xl">A better way to start building.</h2>
-                </div>
-
-                <div class="grid grid-cols-2 grid-rows-2 gap-4">
-                    <div class="flex items-start gap-4">
-                        <div class="shrink-0 rounded-lg bg-gray-100 p-3 text-gray-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6">
-                                </path>
-                            </svg>
-                        </div>
-
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">Advanced reporting</h3>
-
-                            <p class="mt-1 text-gray-700">Track metrics that matter with instant insights</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="shrink-0 rounded-lg bg-gray-100 p-3 text-gray-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z">
-                                </path>
-                            </svg>
-                        </div>
-
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">Collaboration tools</h3>
-
-                            <p class="mt-1 text-gray-700">Work together seamlessly across your organization</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="shrink-0 rounded-lg bg-gray-100 p-3 text-gray-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z">
-                                </path>
-                            </svg>
-                        </div>
-
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">Third-party connectors</h3>
-
-                            <p class="mt-1 text-gray-700">Connect with your favorite tools and services</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start gap-4">
-                        <div class="shrink-0 rounded-lg bg-gray-100 p-3 text-gray-700">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z">
-                                </path>
-                            </svg>
-                        </div>
-
-                        <div>
-                            <h3 class="text-lg font-semibold text-gray-900">Collaboration tools</h3>
-
-                            <p class="mt-1 text-gray-700">Work together seamlessly across your organization</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <div class="author-details">
+          <div class="author-details__profile-image-wrapper">
+            <img class="author-details__profile-image" src="" alt="user profile image" />
+          </div>
+          <p class="author-details__username">Tom Ato / CEO, Pomodoro</p>
         </div>
-
-        <div class="flex gap-8 mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-            <article class="shadow-lg overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                <img alt=""
-                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;q=80&amp;w=1160"
-                class="h-56 w-full object-cover">
-                
-                <div class="bg-white p-4 sm:p-6">
-                    
-                    <span class="bg-blue-500 text-white text-xs font-bold px-1.5 py-0.5 rounded">New</span>
-
-                    <a href="#">
-                        <h3 class="mt-0.5 text-lg text-gray-900 font-bold">
-                            Blog Post Title
-                        </h3>
-                    </a>
-
-                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                        pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                        quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                        atque dignissimos. Molestias explicabo corporis voluptatem?
-                    </p>
-                </div>
-
-                <div class="flex gap-4 p-4 items-center">
-
-                    <img class="w-10 h-10 rounded-full" src="https://dummyimage.com/600x350/6c757d/343a40"
-                        alt="Rounded avatar">
-                    <div class="flex flex-col gap-2">
-                        <h3 class="font-bold">
-                            Kelly Rowan
-                        </h3>
-                        <time datetime="2022-10-10" class="block text-xs text-gray-500"> 10th Oct 2022 </time>
-                    </div>
-                </div>
-            </article>
-
-            <article class="shadow-lg overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                <img alt=""
-                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;q=80&amp;w=1160"
-                class="h-56 w-full object-cover">
-                
-                <div class="bg-white p-4 sm:p-6">
-                    
-                    <span class="bg-blue-500 text-white text-xs font-bold px-1.5 py-0.5 rounded">New</span>
-
-                    <a href="#">
-                        <h3 class="mt-0.5 text-lg text-gray-900 font-bold">
-                            Blog Post Title
-                        </h3>
-                    </a>
-
-                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                        pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                        quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                        atque dignissimos. Molestias explicabo corporis voluptatem?
-                    </p>
-                </div>
-
-                <div class="flex gap-4 p-4 items-center">
-
-                    <img class="w-10 h-10 rounded-full" src="https://dummyimage.com/600x350/6c757d/343a40"
-                        alt="Rounded avatar">
-                    <div class="flex flex-col gap-2">
-                        <h3 class="font-bold">
-                            Kelly Rowan
-                        </h3>
-                        <time datetime="2022-10-10" class="block text-xs text-gray-500"> 10th Oct 2022 </time>
-                    </div>
-                </div>
-            </article>
-
-            <article class="shadow-lg overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
-                <img alt=""
-                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&amp;fit=crop&amp;q=80&amp;w=1160"
-                class="h-56 w-full object-cover">
-                
-                <div class="bg-white p-4 sm:p-6">
-                    
-                    <span class="bg-blue-500 text-white text-xs font-bold px-1.5 py-0.5 rounded">New</span>
-
-                    <a href="#">
-                        <h3 class="mt-0.5 text-lg text-gray-900 font-bold">
-                            Blog Post Title
-                        </h3>
-                    </a>
-
-                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                        pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                        quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                        atque dignissimos. Molestias explicabo corporis voluptatem?
-                    </p>
-                </div>
-
-                <div class="flex gap-4 p-4 items-center">
-
-                    <img class="w-10 h-10 rounded-full" src="https://dummyimage.com/600x350/6c757d/343a40"
-                        alt="Rounded avatar">
-                    <div class="flex flex-col gap-2">
-                        <h3 class="font-bold">
-                            Kelly Rowan
-                        </h3>
-                        <time datetime="2022-10-10" class="block text-xs text-gray-500"> 10th Oct 2022 </time>
-                    </div>
-                </div>
-            </article>
-        </div>
+      </article>
     </div>
+
+    <section class="from-blog" aria-labelledby="from-blog__heading">
+      <h2 class="from-blog__heading" id="from-blog__heading">
+        From our blog
+      </h2>
+      <p class="from-blog__description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit
+        ratione dicta mollitia. Officiis ad.
+      </p>
+
+      <div class="blog-posts-section">
+        <article class="blog-post">
+          <img src="https://dummyimage.com/600x350/ced4da/6c757d" alt="A generic blog post image." />
+          <div class="blog-post__info">
+            <span class="blog-post__type-badge"> New </span>
+            <h3 class="blog-post__title">Blog Post Title</h3>
+
+            <p class="blog-post__content">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Ratione nostrum quas mollitia optio quasi? Molestias expedita
+              aliquam cupiditate dolores dolore libero et minus! Expedita ad
+              nam officia, cum aut et.
+            </p>
+
+            <div class="author-details">
+              <div class="author-details__profile-image-wrapper">
+                <img class="author-details__profile-image" src="" alt="user profile image" />
+              </div>
+              <p class="author-details__username">Tom Ato</p>
+            </div>
+
+            <div class="blog-post__extra-info">
+              <time datetime="2023-03-12" class="blog-post__date"> March 12, 2023 </time>
+              <span class="blog-post__read-time"> 6-min read </span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
