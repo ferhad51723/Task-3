@@ -4,178 +4,211 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="output.css" />
   <title>Bootstrap</title>
 </head>
 
 <body>
   <header>
-    <a href=""> Start Bootstrap </a>
+    <div class="flex justify-between">
+      <a href="#" class="logo"> Start Bootstrap </a>
+
+      <button class="menu-btn">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+          <path
+            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+        </svg>
+      </button>
+    </div>
 
     <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="#"> Home </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#"> About </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#"> Contact </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#"> Pricing </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#"> FAQ </a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#">
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+        <li><a href="#" class="nav-link">Pricing</a></li>
+        <li><a href="#" class="nav-link">FAQ</a></li>
+        <li>
+          <a href="#" class="nav-link flex items-center">
             Blog
-            <span>
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                <path
-                  d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
-              </svg>
-            </span>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path
+                d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z" />
+            </svg>
           </a>
         </li>
-        <li class="nav__list-item">
-          <a href="#"> Portfolio </a>
-        </li>
+        <li><a href="#" class="nav-link">Portfolio</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section aria-labelledby="hero__heading" class="hero">
-      <div class="hero__left-column">
-        <h2 id="hero__heading" class="hero__heading">
+    <section aria-labelledby="hero-title" class="hero">
+      <div class="hero-header">
+        <h1 id="hero-title" class="hero-title section-title">
           A Bootstrap 5 template for modern businesses
-        </h2>
-        <p class="hero__description">
-          Quickly design and customize responsive mobile-first sites with
-          Bootstrap, the world’s most popular front-end open source toolkit!
+        </h1>
+        <p class="hero-text">
+          Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit!
         </p>
       </div>
 
-      <div class="hero__actions-buttons">
-        <a class="hero__link hero__link--get-started" href="#features">
-          Get Started
-        </a>
-
-        <a href="" class="hero__link hero__link--learn-more"> Learn More </a>
+      <div class="hero-actions">
+        <a class="btn-start" href="#features">Get Started</a>
+        <a href="#" class="btn-learn">Learn More</a>
       </div>
 
-      <img class="hero__image" src="https://dummyimage.com/600x400/343a40/6c757d"
+      <img class="hero-img" src="https://dummyimage.com/600x400/343a40/6c757d"
         alt="Abstract graphic representing a modern business website." />
     </section>
 
-    <section class="features" aria-labelledby="features__heading">
-      <h2 id="features__heading" class="features__heading section__heading">
+    <section class="features" aria-labelledby="features-title">
+      <h2 id="features-title" class="section-title">
         A better way to start building.
       </h2>
 
-      <div class="features__cards-group">
+      <div class="features-grid">
         <article class="feature-card">
-          <div class="feature-card__icon"></div>
-          <h3 class="feature-card__title">Featured Title</h3>
-          <p class="feature-card__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            ducimus, qui voluptatibus dolore nemo fugit perferendis
-            dignissimos. Nam natus maxime animi eum sit est ratione! Illum
-            eligendi aperiam dolorem similique?
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m200-120-80-480h720l-80 480H200Zm67-80h426l51-320H216l51 320Zm133-160h160q17 0 28.5-11.5T600-400q0-17-11.5-28.5T560-440H400q-17 0-28.5 11.5T360-400q0 17 11.5 28.5T400-360ZM240-640q-17 0-28.5-11.5T200-680q0-17 11.5-28.5T240-720h480q17 0 28.5 11.5T760-680q0 17-11.5 28.5T720-640H240Zm80-120q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760H320Zm-53 560h426-426Z"/></svg>
+          </div>
+          <h3 class="feature-title">Featured Title</h3>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-card__icon"></div>
-          <h3 class="feature-card__title">Featured Title</h3>
-          <p class="feature-card__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            ducimus, qui voluptatibus dolore nemo fugit perferendis
-            dignissimos. Nam natus maxime animi eum sit est ratione! Illum
-            eligendi aperiam dolorem similique?
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M80-120v-720h400v160h400v560H80Zm80-80h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm0-160h80v-80h-80v80Zm160 480h320v-400H480v80h80v80h-80v80h80v80h-80v80Zm160-240v-80h80v80h-80Zm0 160v-80h80v80h-80Z"/></svg>
+          </div>
+          <h3 class="feature-title">Featured Title</h3>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-card__icon"></div>
-          <h3 class="feature-card__title">Featured Title</h3>
-          <p class="feature-card__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            ducimus, qui voluptatibus dolore nemo fugit perferendis
-            dignissimos. Nam natus maxime animi eum sit est ratione! Illum
-            eligendi aperiam dolorem similique?
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
+          </div>
+          <h3 class="feature-title">Featured Title</h3>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </article>
 
         <article class="feature-card">
-          <div class="feature-card__icon"></div>
-          <h3 class="feature-card__title">Featured Title</h3>
-          <p class="feature-card__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            ducimus, qui voluptatibus dolore nemo fugit perferendis
-            dignissimos. Nam natus maxime animi eum sit est ratione! Illum
-            eligendi aperiam dolorem similique?
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
+          </div>
+          <h3 class="feature-title">Featured Title</h3>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </article>
       </div>
     </section>
 
-    <div class="top-review-section">
+    <div class="review-section">
       <article class="review">
-        <p class="review__content">
-          "Working with Start Bootstrap templates has saved me tons of
-          development time when building new projects! Starting with a
-          Bootstrap template just makes things easier!"
+        <p class="review-text">
+          "Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"
         </p>
 
-        <div class="author-details">
-          <div class="author-details__profile-image-wrapper">
-            <img class="author-details__profile-image" src="" alt="user profile image" />
+        <div class="author">
+          <div class="author-img">
+            <img src="https://dummyimage.com/40x40/ced4da/6c757d" alt="user profile image" />
           </div>
-          <p class="author-details__username">Tom Ato / CEO, Pomodoro</p>
+          <p class="author-name">Tom Ato / CEO, Pomodoro</p>
         </div>
       </article>
     </div>
 
-    <section class="from-blog" aria-labelledby="from-blog__heading">
-      <h2 class="from-blog__heading" id="from-blog__heading">
-        From our blog
-      </h2>
-      <p class="from-blog__description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit
-        ratione dicta mollitia. Officiis ad.
+    <section class="blog" aria-labelledby="blog-title">
+      <h2 class="section-title" id="blog-title">From our blog</h2>
+      <p class="blog-desc">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.
       </p>
 
-      <div class="blog-posts-section">
-        <article class="blog-post">
-          <img src="https://dummyimage.com/600x350/ced4da/6c757d" alt="A generic blog post image." />
-          <div class="blog-post__info">
-            <span class="blog-post__type-badge"> New </span>
-            <h3 class="blog-post__title">Blog Post Title</h3>
+      <div class="blog-list">
+        <!-- BLOG POST -->
+        <article class="post">
+          <img src="https://dummyimage.com/600x350/ced4da/6c757d" alt="A blog post image." />
+          <div class="post-info">
+            <span class="post-badge">New</span>
+            <h3 class="post-title">Blog Post Title</h3>
 
-            <p class="blog-post__content">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Ratione nostrum quas mollitia optio quasi? Molestias expedita
-              aliquam cupiditate dolores dolore libero et minus! Expedita ad
-              nam officia, cum aut et.
+            <p class="post-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
 
-            <div class="author-details">
-              <div class="author-details__profile-image-wrapper">
-                <img class="author-details__profile-image" src="" alt="user profile image" />
+            <div class="author">
+              <div class="author-img">
+                <img src="" alt="user profile image" />
               </div>
-              <p class="author-details__username">Tom Ato</p>
+              <p class="author-name">Tom Ato</p>
             </div>
 
-            <div class="blog-post__extra-info">
-              <time datetime="2023-03-12" class="blog-post__date"> March 12, 2023 </time>
-              <span class="blog-post__read-time"> 6-min read </span>
+            <div class="post-meta">
+              <time datetime="2023-03-12">March 12, 2023</time>
+              <span class="read-time">6-min read</span>
             </div>
           </div>
         </article>
+
+        <!-- Aynı post 2 -->
+        <article class="post">
+          <img src="https://dummyimage.com/600x350/ced4da/6c757d" alt="A blog post image." />
+          <div class="post-info">
+            <span class="post-badge">New</span>
+            <h3 class="post-title">Blog Post Title</h3>
+            <p class="post-text">Lorem ipsum dolor sit amet.</p>
+            <div class="author">
+              <div class="author-img"><img src="" alt=""></div>
+              <p class="author-name">Tom Ato</p>
+            </div>
+            <div class="post-meta">
+              <time datetime="2023-03-12">March 12, 2023</time>
+              <span class="read-time">6-min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Aynı post 3 -->
+        <article class="post">
+          <img src="https://dummyimage.com/600x350/ced4da/6c757d" alt="A blog post image." />
+          <div class="post-info">
+            <span class="post-badge">New</span>
+            <h3 class="post-title">Blog Post Title</h3>
+            <p class="post-text">Lorem ipsum dolor sit amet.</p>
+            <div class="author">
+              <div class="author-img"><img src="" alt=""></div>
+              <p class="author-name">Tom Ato</p>
+            </div>
+            <div class="post-meta">
+              <time datetime="2023-03-12">March 12, 2023</time>
+              <span class="read-time">6-min read</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="signup">
+      <div class="signup-header">
+        <h2 class="signup-title">New products, delivered to you.</h2>
+        <p class="signup-desc">Sign up for our newsletter for updates.</p>
+      </div>
+
+      <div class="signup-body">
+        <form action="" class="signup-form">
+          <div class="input-group">
+            <input class="input" type="email" required>
+            <button class="submit">Sign up</button>
+          </div>
+          <p class="form-note">We care about privacy.</p>
+        </form>
       </div>
     </section>
   </main>
